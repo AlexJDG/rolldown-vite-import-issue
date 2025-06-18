@@ -1,0 +1,38 @@
+{
+  // These tasks will run in order when initializing your CodeSandbox project.
+  "setupTasks": [
+    {
+      "name": "Installing Dependencies",
+      "command": "yarn install"
+    },
+    {
+      "name": "Building Project",
+      "command": "yarn rolldown-vite-build && yarn vite-build"
+    }
+  ],
+
+  // These tasks can be run from CodeSandbox. Running one will open a log in the app.
+  "tasks": {
+    "build": {
+      "name": "build",
+      "command": "yarn rolldown-vite-build && yarn vite-build",
+      "runAtStart": true
+    },
+    "vite-rolldown-preview": {
+      "name": "rolldown-vite preview",
+      "command": "yarn rolldown-vite-preview",
+      "runAtStart": true,
+      "preview": {
+        "port": 4173
+      }
+    },
+    "vite-preview": {
+      "name": "vite preview",
+      "command": "yarn vite-preview",
+      "runAtStart": true,
+      "preview": {
+        "port": 4174
+      }
+    }
+  }
+}

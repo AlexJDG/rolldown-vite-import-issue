@@ -1,0 +1,19 @@
+{
+  "name": "vite-react-js",
+  "private": true,
+  "version": "0.0.0",
+  "type": "module",
+  "scripts": {
+    "rolldown-vite-build": "VITE_BUNDLER='rolldown-vite' node_modules/rolldown-vite/bin/vite.js build --minify=false --outDir=rolldown-vite-dist",
+    "vite-build": "VITE_BUNDLER='vite' node_modules/vite/bin/vite.js  build --minify=false --outDir=vite-dist",
+    "rolldown-vite-preview": "node_modules/rolldown-vite/bin/vite.js preview --outDir=rolldown-vite-dist",
+    "vite-preview": "node_modules/vite/bin/vite.js  preview --outDir=vite-dist"
+  },
+  "dependencies": {
+    "timezones-list": "3.1.0",
+    "rolldown-vite": "6.3.21",
+    "vite": "6.3.5"
+  },
+  "keywords": [],
+  "description": ""
+}
